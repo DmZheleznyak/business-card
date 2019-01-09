@@ -55,7 +55,8 @@ main {
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    opacity: 1; }
     main .main_services_images .main_services {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -85,7 +86,12 @@ main {
       main article p .name_of_company {
         font-weight: bold; }
     main article .list_services {
-      display: none;
+      opacity: 0;
+      -webkit-transition: opacity 1.1s ease-in-out;
+      -o-transition: opacity 1.1s ease-in-out;
+      transition: opacity 1.1s ease-in-out;
+      height: 0;
+      overflow: hidden;
       width: 50%;
       text-indent: 10%;
       margin-top: 2%; }

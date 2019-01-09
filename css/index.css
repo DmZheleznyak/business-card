@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  height: 96vh;
+  line-height: 1;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1em; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 20px auto;
+  padding-bottom: 20px;
+  color: black;
+  border-bottom: 2px solid black; }
+  header .logo {
+    width: 30%;
+    text-align: center; }
+    header .logo img {
+      height: 100px; }
+  header .contacts {
+    margin: 0 auto;
+    text-align: center; }
+    header .contacts h1 {
+      margin-bottom: 10px; }
+    header .contacts p {
+      margin-bottom: 6px; }
+
+main {
+  width: 80%;
+  margin: 0 auto; }
+  main .main_services_images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    main .main_services_images .main_services {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly; }
+    main .main_services_images ul {
+      list-style: inherit;
+      line-height: 2; }
+  main article {
+    margin-top: 2%; }
+    main article h2 {
+      text-align: center;
+      margin-bottom: 18px; }
+    main article p {
+      text-indent: 4%;
+      line-height: 1.8;
+      padding-top: 1%; }
+      main article p .name_of_company {
+        font-weight: bold; }
+    main article .list_services {
+      display: none;
+      width: 50%;
+      text-indent: 10%;
+      margin-top: 2%; }
+      main article .list_services li {
+        margin-top: 2%; }
+        main article .list_services li i {
+          display: inline;
+          margin-right: 4%; }
+
+footer {
+  border-top: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  height: 10%;
+  margin: 2% auto;
+  padding-top: 2%;
+  margin-top: 6%; }
+  footer .name p span {
+    font-weight: bold; }
+  footer nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    footer nav ul li {
+      margin-top: 4%; }
+
+.images {
+  width: 40%;
+  position: relative;
+  margin-left: 6%; }
+  .images .prev, .images .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    -webkit-transition: 0.6s ease;
+    -o-transition: 0.6s ease;
+    transition: 0.6s ease;
+    border-radius: 0 2px 2px 0; }
+    .images .prev:hover, .images .next:hover {
+      color: whitesmoke;
+      background-color: rgba(0, 0, 0, 0.8); }
+  .images .next {
+    right: 0;
+    border-radius: 3px 0 0 3px; }
+  .images .slides {
+    margin: 0 auto;
+    margin-left: 20%; }
+    .images .slides img {
+      width: 80%;
+      height: 350px; }
+    .images .slides .text {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 0; }
+  .images .fade {
+    -webkit-animation-name: fade;
+            animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade {
+  from {
+    opacity: 0.4; }
+  to {
+    opacity: 1; } }

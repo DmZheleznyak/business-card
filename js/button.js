@@ -1,5 +1,4 @@
-
-function clickButton(event) {
+function showList(event) {
 
     var listService = document.getElementsByClassName("list_services")
     var mainServicesImages = document.getElementsByClassName("main_services_images")
@@ -23,4 +22,23 @@ function clickButton(event) {
     listService[0].style.opacity = "1"
     listService[0].style.height = "auto"
 
+}
+
+function showDocumentation(event) {
+    var documentation = document.getElementsByClassName("documentation")
+
+    if ( documentation[0].style.opacity === "1" ) {
+
+        event.target.innerText = "Открыть"
+
+        documentation[0].style.opacity = "0"
+        documentation[0].style.height = "0"
+    
+        return
+    }
+    
+    event.target.innerText = "Закрыть"
+    
+    documentation[0].style.opacity = "1"
+    documentation[0].style.height = "auto"
 }

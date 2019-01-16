@@ -89,9 +89,9 @@ main {
         font-weight: bold; }
     main article .list_services {
       opacity: 0;
-      -webkit-transition: opacity 0.5s ease-in-out;
-      -o-transition: opacity 0.5s ease-in-out;
-      transition: opacity 0.5s ease-in-out;
+      -webkit-transition: opacity 0.7s ease-in-out;
+      -o-transition: opacity 0.7s ease-in-out;
+      transition: opacity 0.7s ease-in-out;
       height: 0;
       overflow: hidden;
       width: 50%;
@@ -102,6 +102,13 @@ main {
         main article .list_services li i {
           display: inline;
           margin-right: 4%; }
+    main article .documentation {
+      opacity: 0;
+      -webkit-transition: opacity 0.7s ease-in-out;
+      -o-transition: opacity 0.7s ease-in-out;
+      transition: opacity 0.7s ease-in-out;
+      height: 0;
+      overflow: hidden; }
 
 footer {
   border-top: 1.5px solid black;

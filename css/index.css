@@ -8,7 +8,9 @@ body {
   height: 96vh;
   line-height: 1;
   font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 1em; }
+  font-size: 1em;
+  background-color: #DBE3F0;
+  color: black; }
 
 ol, ul {
   list-style: none; }
@@ -87,9 +89,9 @@ main {
         font-weight: bold; }
     main article .list_services {
       opacity: 0;
-      -webkit-transition: opacity 1.1s ease-in-out;
-      -o-transition: opacity 1.1s ease-in-out;
-      transition: opacity 1.1s ease-in-out;
+      -webkit-transition: opacity 0.5s ease-in-out;
+      -o-transition: opacity 0.5s ease-in-out;
+      transition: opacity 0.5s ease-in-out;
       height: 0;
       overflow: hidden;
       width: 50%;
@@ -102,7 +104,7 @@ main {
           margin-right: 4%; }
 
 footer {
-  border-top: 1px solid black;
+  border-top: 1.5px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,7 +117,7 @@ footer {
   height: 10%;
   margin: 2% auto;
   padding-top: 2%;
-  margin-top: 6%; }
+  margin-top: 2%; }
   footer .name p span {
     font-weight: bold; }
   footer nav ul {
@@ -155,7 +157,7 @@ footer {
     border-radius: 3px 0 0 3px; }
   .images .slides {
     margin: 0 auto;
-    margin-left: 20%; }
+    margin-left: 16%; }
     .images .slides img {
       width: 80%;
       height: 350px; }
